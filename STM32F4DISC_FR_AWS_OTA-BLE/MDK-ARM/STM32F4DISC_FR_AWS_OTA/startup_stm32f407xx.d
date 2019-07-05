@@ -1,0 +1,1 @@
+stm32f4disc_fr_aws_ota\startup_stm32f407xx.o: startup_stm32f407xx.s

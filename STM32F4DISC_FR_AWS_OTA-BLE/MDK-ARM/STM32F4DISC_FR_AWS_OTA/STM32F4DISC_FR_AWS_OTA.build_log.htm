@@ -1,0 +1,317 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: cy chen, okSate, LIC=UB4Y8-38VJX-NQZ0G-VH8GN-SR47J-8MX6H
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\ccy\GitCode\SmartRTU\STM32F4DISC_FR_AWS_OTA-BLE\MDK-ARM\STM32F4DISC_FR_AWS_OTA.uvprojx
+Project File Date:  05/14/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'STM32F4DISC_FR_AWS_OTA'
+assembling startup_stm32f407xx.s...
+compiling ota_example_mqtt.c...
+..\Src\ota_example_mqtt.c(234): warning:  #188-D: enumerated type mixed with another type
+                      IOT_OTA_ReportProgress(h_ota, percent, 
+ULL);
+..\Src\ota_example_mqtt.c(235): warning:  #188-D: enumerated type mixed with another type
+                      IOT_OTA_ReportProgress(h_ota, percent, "hello");
+..\Src\ota_example_mqtt.c(44): warning:  #177-D: variable "user_argc"  was declared but never referenced
+  static int      user_argc;
+..\Src\ota_example_mqtt.c(45): warning:  #177-D: variable "user_argv"  was declared but never referenced
+  static char   **user_argv;
+..\Src\ota_example_mqtt.c: 4 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_timebase_TIM.c...
+compiling sim8001.c...
+..\Src\sim8001.c(74): warning:  #177-D: variable "responseLen"  was declared but never referenced
+  	 uint16_t responseLen = 0;
+..\Src\sim8001.c: 1 warning, 0 errors
+compiling gpio.c...
+compiling stm32f4xx_hal_msp.c...
+compiling ble_chat_to_usart.c...
+compiling main.c...
+../Src/main.c(120): warning:  #185-D: dynamic initialization in unreachable code
+  	uint8_t BLE_onoff_status = 0x00;
+../Src/main.c(986): warning:  #128-D: loop is not reachable
+    while (1)
+../Src/main.c(95): warning:  #177-D: variable "test"  was declared but never referenced
+    uint8_t test[2] = {0};
+../Src/main.c(120): warning:  #177-D: variable "BLE_onoff_status"  was declared but never referenced
+  	uint8_t BLE_onoff_status = 0x00;
+../Src/main.c(185): warning:  #177-D: variable "BLE_RX_DataBuff"  was declared but never referenced
+  	char BLE_RX_DataBuff[1000] = {0}; 
+../Src/main.c(193): warning:  #177-D: variable "pos_idx"  was declared but never referenced
+  	uint8_t  pos_idx  =0; 
+../Src/main.c(195): warning:  #177-D: variable "curEOP_posPtr"  was declared but never referenced
+    uint8_t  curEOP_posPtr = 0;
+../Src/main.c(197): warning:  #177-D: variable "curPkt_TypeVal"  was declared but never referenced
+    uint8_t  curPkt_TypeVal = 0;
+../Src/main.c(200): warning:  #550-D: variable "curPktExpectedLen"  was set but never used
+  	uint8_t  curPktExpectedLen = 0;
+../Src/main.c(201): warning:  #550-D: variable "SopEopFinsh_Flag"  was set but never used
+  	uint8_t  SopEopFinsh_Flag = 0;//   ---80 succ , 83 fail, idle 0  0125
+../Src/main.c(202): warning:  #177-D: variable "SopFindInFrame_Flag"  was declared but never referenced
+    uint8_t  SopFindInFrame_Flag = 0;//   ---80 succ , 83 fail, idle 0  0124
+../Src/main.c(204): warning:  #177-D: variable "BTheartStatus"  was declared but never referenced
+  	uint8_t BTheartStatus = 0;
+../Src/main.c(205): warning:  #177-D: variable "BT_heartAck_RecvStatus"  was declared but never referenced
+    uint8_t BT_heartAck_RecvStatus = 0;  // ---  80 recvd, 83 wait for Ack , 0 idle
+../Src/main.c(206): warning:  #550-D: variable "BTheart_Reset"  was set but never used
+    uint8_t BTheart_Reset = 0;            // ---80  reset heart timing
+../Src/main.c(227): warning:  #550-D: variable "newID_heartStatus"  was set but never used
+  	uint8_t newID_heartStatus = 0;
+../Src/main.c: 15 warnings, 0 errors
+compiling usart.c...
+../Src/usart.c(209): warning:  #223-D: function "ATReceiveData" declared implicitly
+  		   ATReceiveData(rec_table[2]); 
+../Src/usart.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling at_api.c...
+compiling at_conn_mgmt.c...
+..\eng\atm\at_conn_mgmt.c(284): warning:  #231-D: declaration is not visible outside of function
+  int at_conn_input(struct at_conn_input *param)
+..\eng\atm\at_conn_mgmt.c(383): warning:  #223-D: function "HAL_AT_CONN_Init" declared implicitly
+      if (HAL_AT_CONN_Init() != 0) {
+..\eng\atm\at_conn_mgmt.c(406): warning:  #223-D: function "HAL_AT_CONN_DomainToIp" declared implicitly
+      if (HAL_AT_CONN_DomainToIp((char *)nodename, resultip) != 0) {
+..\eng\atm\at_conn_mgmt.c(493): warning:  #940-D: missing return statement at end of non-void function "at_conn_start" 
+  }
+..\eng\atm\at_conn_mgmt.c(508): warning:  #223-D: function "HAL_AT_CONN_Close" declared implicitly
+          if (HAL_AT_CONN_Close(c, -1) != 0) {
+..\eng\atm\at_conn_mgmt.c(568): warning:  #223-D: function "HAL_AT_CONN_Send" declared implicitly
+      if (HAL_AT_CONN_Send(c, (uint8_t *)data, size, NULL, -1, conn->send_timeout_ms)) {
+..\eng\atm\at_conn_mgmt.c(98): warning:  #177-D: function "alloc_payload"  was declared but never referenced
+  static void *alloc_payload(int size)
+..\eng\atm\at_conn_mgmt.c(131): warning:  #177-D: function "alloc_atnetbuf"  was declared but never referenced
+  static at_netbuf_t *alloc_atnetbuf(void)
+..\eng\atm\at_conn_mgmt.c: 8 warnings, 0 errors
+compiling stm32f4xx_hal_pwr.c...
+compiling at_conn_mbox.c...
+compiling at_tcp.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling sim800.c...
+..\eng\atm\sim800.c(801): warning:  #940-D: missing return statement at end of non-void function "HAL_AT_CONN_Start" 
+   }
+..\eng\atm\sim800.c(836): warning:  #940-D: missing return statement at end of non-void function "HAL_AT_CONN_Close" 
+  }
+..\eng\atm\sim800.c: 2 warnings, 0 errors
+compiling hal_sim800.c...
+..\Src\hal_sim800.c(56): warning:  #940-D: missing return statement at end of non-void function "HAL_GetTimeStr" 
+  }
+..\Src\hal_sim800.c(74): warning:  #940-D: missing return statement at end of non-void function "kv_get" 
+  }
+..\Src\hal_sim800.c(98): warning:  #940-D: missing return statement at end of non-void function "HAL_GetPartnerID" 
+  }
+..\Src\hal_sim800.c(103): warning:  #940-D: missing return statement at end of non-void function "HAL_GetModuleID" 
+  }
+..\Src\hal_sim800.c(109): warning:  #940-D: missing return statement at end of non-void function "HAL_GetChipID" 
+  }
+..\Src\hal_sim800.c(115): warning:  #940-D: missing return statement at end of non-void function "HAL_GetDeviceID" 
+  }
+..\Src\hal_sim800.c(178): warning:  #940-D: missing return statement at end of non-void function "HAL_GetFirmwareVesion" 
+  }
+..\Src\hal_sim800.c(183): warning:  #940-D: missing return statement at end of non-void function "HAL_SemaphoreCreate" 
+  }
+..\Src\hal_sim800.c(198): warning:  #940-D: missing return statement at end of non-void function "HAL_SemaphoreWait" 
+  }
+..\Src\hal_sim800.c(208): warning:  #940-D: missing return statement at end of non-void function "HAL_ThreadCreate" 
+  }
+..\Src\hal_sim800.c(232): warning:  #940-D: missing return statement at end of non-void function "HAL_Firmware_Persistence_Write" 
+  }
+..\Src\hal_sim800.c(237): warning:  #940-D: missing return statement at end of non-void function "HAL_Firmware_Persistence_Stop" 
+  }
+..\Src\hal_sim800.c(242): warning:  #940-D: missing return statement at end of non-void function "HAL_Config_Write" 
+  }
+..\Src\hal_sim800.c(247): warning:  #940-D: missing return statement at end of non-void function "HAL_Config_Read" 
+  }
+..\Src\hal_sim800.c(261): warning:  #940-D: missing return statement at end of non-void function "_get_default_routing_ifname" 
+  }
+..\Src\hal_sim800.c(267): warning:  #940-D: missing return statement at end of non-void function "HAL_Wifi_Get_IP" 
+  }
+..\Src\hal_sim800.c(274): warning:  #940-D: missing return statement at end of non-void function "HAL_Kv_Set" 
+  }
+..\Src\hal_sim800.c(279): warning:  #940-D: missing return statement at end of non-void function "HAL_Kv_Del" 
+  }
+..\Src\hal_sim800.c(284): warning:  #940-D: missing return statement at end of non-void function "os_time_get" 
+  }
+..\Src\hal_sim800.c(296): warning:  #940-D: missing return statement at end of non-void function "HAL_UTC_Get" 
+  }
+..\Src\hal_sim800.c(301): warning:  #940-D: missing return statement at end of non-void function "HAL_Timer_Create" 
+  }
+..\Src\hal_sim800.c(306): warning:  #940-D: missing return statement at end of non-void function "HAL_Timer_Start" 
+  }
+..\Src\hal_sim800.c(311): warning:  #940-D: missing return statement at end of non-void function "HAL_Timer_Stop" 
+  }
+..\Src\hal_sim800.c(317): warning:  #940-D: missing return statement at end of non-void function "HAL_Timer_Delete" 
+  }
+..\Src\hal_sim800.c(220): warning:  #177-D: variable "fp"  was declared but never referenced
+  static FILE *fp;
+..\Src\hal_sim800.c(281): warning:  #177-D: function "os_time_get"  was declared but never referenced
+  static long long os_time_get(void)
+..\Src\hal_sim800.c(286): warning:  #177-D: variable "delta_time"  was declared but never referenced
+  static long long delta_time = 0;
+..\Src\hal_sim800.c: 27 warnings, 0 errors
+compiling hal_ota.c...
+compiling at_mqtt.c...
+..\eng\atm\at_mqtt.c(941): warning:  #177-D: label "RETURN"  was declared but never referenced
+  RETURN:
+..\eng\atm\at_mqtt.c: 1 warning, 0 errors
+compiling infra_defs.c...
+compiling infra_compat.c...
+..\eng\infra\infra_compat.c(124): warning:  #188-D: enumerated type mixed with another type
+      res = IOT_Sign_MQTT(g_sdk_impl_ctx.domain_type, &meta_data, &g_sign_mqtt);
+..\eng\infra\infra_compat.c: 1 warning, 0 errors
+compiling dev_sign_mqtt.c...
+..\eng\dev_sign\dev_sign_mqtt.c(110): warning:  #177-D: variable "signpwdPrint"  was declared but never referenced
+  		char signpwdPrint[40]={0};//20190420print
+..\eng\dev_sign\dev_sign_mqtt.c: 1 warning, 0 errors
+compiling infra_log.c...
+compiling infra_json_parser.c...
+compiling infra_httpc.c...
+..\eng\infra\infra_httpc.c(144): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(buf, "%s %s HTTP/1.1\r\nHost: %s\r\n", meth, path, host); /* Write request */
+..\eng\infra\infra_httpc.c: 1 warning, 0 errors
+compiling infra_md5.c...
+compiling infra_net.c...
+compiling infra_prt_nwk_payload.c...
+..\eng\infra\infra_prt_nwk_payload.c(58): warning:  #223-D: function "printf" declared implicitly
+      printf("%s%s", "\033", _color[level]);
+..\eng\infra\infra_prt_nwk_payload.c: 1 warning, 0 errors
+compiling infra_report.c...
+compiling infra_sha256.c...
+compiling infra_string.c...
+compiling infra_timer.c...
+compiling MQTTConnectClient.c...
+compiling mqtt_api.c...
+..\eng\mqtt\mqtt_api.c(473): warning:  #870-D: invalid multibyte character sequence
+  			printf("__@@@@GPRS-TCP连接失败?****\r\n"); //20190422print 
+..\eng\mqtt\mqtt_api.c: 1 warning, 0 errors
+compiling MQTTDeserializePublish.c...
+compiling MQTTPacket.c...
+compiling MQTTSerializePublish.c...
+compiling MQTTSubscribeClient.c...
+compiling MQTTUnsubscribeClient.c...
+compiling ota_mqtt.c...
+compiling iotx_ota.c...
+..\eng\ota\iotx_ota.c(240): warning:  #111-D: statement is unreachable
+              break;
+..\eng\ota\iotx_ota.c(776): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c(787): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c(805): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c(823): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c(841): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c(859): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c(870): warning:  #111-D: statement is unreachable
+          break;
+..\eng\ota\iotx_ota.c: 8 warnings, 0 errors
+compiling ota_lib.c...
+compiling ota_coap.c...
+compiling ota_fetch.c...
+compiling root_ca.c...
+compiling stm32f4xx_hal.c...
+compiling system_stm32f4xx.c...
+compiling at_parser.c...
+..\eng\atm\at_parser.c(320): warning:  #223-D: function "Clear_AT_RxBuf" declared implicitly
+      Clear_AT_RxBuf();
+..\eng\atm\at_parser.c(334): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+  		 strncpy(replybuf, AT_RX_BUF, bufsize);
+..\eng\atm\at_parser.c(165): warning:  #177-D: function "at_init_task_mutex"  was declared but never referenced
+  static int at_init_task_mutex()
+..\eng\atm\at_parser.c(176): warning:  #177-D: function "at_deinit_task_mutex"  was declared but never referenced
+  static void at_deinit_task_mutex()
+..\eng\atm\at_parser.c(184): warning:  #177-D: function "at_init_uart_recv_mutex"  was declared but never referenced
+  static int at_init_uart_recv_mutex()
+..\eng\atm\at_parser.c(195): warning:  #177-D: function "at_deinit_uart_recv_mutex"  was declared but never referenced
+  static void at_deinit_uart_recv_mutex()
+..\eng\atm\at_parser.c(203): warning:  #177-D: function "at_worker_uart_send_mutex_init"  was declared but never referenced
+  static int at_worker_uart_send_mutex_init()
+..\eng\atm\at_parser.c: 7 warnings, 0 errors
+compiling wrapper.c...
+..\eng\wrappers\wrapper.c(28): warning:  #940-D: missing return statement at end of non-void function "HAL_AT_Uart_Deinit" 
+  }
+..\eng\wrappers\wrapper.c(214): warning:  #940-D: missing return statement at end of non-void function "HAL_MutexCreate" 
+  }
+..\eng\wrappers\wrapper.c: 2 warnings, 0 errors
+compiling mqtt_sim800.c...
+..\eng\atm\mqtt_sim800.c(1240): warning:  #177-D: variable "i"  was declared but never referenced
+    uint8_t i=0;
+..\eng\atm\mqtt_sim800.c(1242): warning:  #177-D: variable "data"  was declared but never referenced
+  	uint8_t data;
+..\eng\atm\mqtt_sim800.c(1243): warning:  #177-D: variable "port"  was declared but never referenced
+  	char port[5] = "1883";//端口固定为1883   //互联网平台端口
+..\eng\atm\mqtt_sim800.c(1244): warning:  #177-D: variable "ipaddr"  was declared but never referenced
+  	char ipaddr[37] = ".iot-as-mqtt.cn-shanghai.aliyuncs.com";//华东2（上海）互联网平台域名
+..\eng\atm\mqtt_sim800.c(1245): warning:  #177-D: variable "tcp_ipaddr"  was declared but never referenced
+  	char tcp_ipaddr[50]="";
+..\eng\atm\mqtt_sim800.c(1246): warning:  #177-D: variable "p2"  was declared but never referenced
+  	uint8_t p2[100];
+..\eng\atm\mqtt_sim800.c(1247): warning:  #177-D: variable "res"  was declared but never referenced
+  	uint8_t res=0;
+..\eng\atm\mqtt_sim800.c(1248): warning:  #177-D: variable "return_value"  was declared but never referenced
+  	uint8_t return_value=1;
+..\eng\atm\mqtt_sim800.c(1250): warning:  #177-D: variable "retry"  was declared but never referenced
+      int retry = 0;
+..\eng\atm\mqtt_sim800.c(1251): warning:  #177-D: variable "default_CMD_LEN"  was declared but never referenced
+  	int default_RSP_LEN,default_CMD_LEN=64; //20190422
+..\eng\atm\mqtt_sim800.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=8212 RO-data=448 RW-data=28 ZI-data=31628  
+FromELF: creating hex file...
+"STM32F4DISC_FR_AWS_OTA\STM32F4DISC_FR_AWS_OTA.axf" - 0 Error(s), 91 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_STM32F4DISC_FR_AWS_OTA
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:57
+</pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+stm32f4disc_fr_aws_ota\infra_json_parser.o: ..\eng\infra\infra_json_parser.c
+stm32f4disc_fr_aws_ota\infra_json_parser.o: ..\eng\infra\infra_config.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: ..\eng\infra\infra_types.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: ..\eng\infra\infra_json_parser.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: ..\eng\infra\infra_log.h
+stm32f4disc_fr_aws_ota\infra_json_parser.o: ..\eng\infra\infra_defs.h
